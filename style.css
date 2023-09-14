@@ -22,20 +22,25 @@ img {
     margin: 0 auto;
 }
 
+.container_baner {
+    max-width: 1600px;
+    margin: 0 auto; 
+}
+
 header {
     background: #222;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding: 18px 0 19px 231px;
+    padding: 18px 0 19px;
     gap: 41px;
 }
 
@@ -43,7 +48,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 240px 20px 0px;
+    padding: 26px 0px 20px;
     gap: 41px;
 }
 
@@ -51,7 +56,6 @@ header {
     background:#F1E4E6;
     display: flex;
     margin-bottom: 65px;
-    margin: 0 auto;
 }
 
 .big_img {
@@ -208,7 +212,6 @@ header {
 
     .container {
         max-width: 736px;
-        margin: 0 auto;
     }
 
     .logo {
@@ -261,4 +264,82 @@ header {
     .title h2 {
         margin-bottom: 3px;
     }
+
+    @media (max-width: 375px) {
+
+        .container {
+            max-width: 344px;
+        }
+
+        .logo {
+            padding: 18px 0px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .navi {
+            padding: 25px 0px;
+        }
+
+        .container_baner {
+            max-width: 375px;
+        }
+
+        .big_img {
+            padding: 148px 0px;
+            gap: 15px;
+        }
+
+        .big_img img {
+            width: 12px;
+            max-height: 61px; 
+        }
+
+        .big_img_text h1 {
+            font-size: 38px;
+        }
+
+        .big_img_text h2 {
+            font-size: 20px;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 0.5fr;
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .card_long {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .long_img {
+            height: 100%;
+        }
+
+        .cards_list_list {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+    }
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    
 }
